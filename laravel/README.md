@@ -12,3 +12,7 @@ Your task is to implement a webpage that allows users to list the employees in t
 4. Your webpage should provide a searchbox for users to search employee by their name, fired by clicking a button.
 
 ![demo](https://i.ibb.co/NjdtNb0/Screenshot-from-2019-06-27-21-25-04.png)
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

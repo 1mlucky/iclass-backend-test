@@ -1,5 +1,6 @@
 <?php
-use App\Http\Controllers\PageController;
+
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,4 +13,6 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/', "PageController@show");
+Route::get('/', function () {
+    return view('welcome');
+});
