@@ -7,6 +7,8 @@ services:
       - "127.0.0.1:13306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: "verysecurerootpasswordiclassTECHtessolution12345672019docker"
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: "someothersecurepassword0123456"
   pma:
     image: "phpmyadmin/phpmyadmin:latest"
     ports:
@@ -14,5 +16,5 @@ services:
     environment:
       PMA_HOST: "mysql"
       PMA_PORT: 3306
-      PMA_USER: root
-      PMA_PASSWORD: "verysecurerootpasswordiclassTECHtessolution12345672019docker"
+    depends_on:
+      - mysql
