@@ -4,7 +4,7 @@ Welcome to this deeply insane technical test. You are suggested to open this wit
 
 ## Technologies involved
 
-- Docker/Docker Compose
+- [Docker](https://www.docker.com) / [Docker Compose](https://docs.docker.com/compose/)
 - Linux/Linux scripting
 - HTML/JS/CSS
 - [PHP](https://www.php.net)
