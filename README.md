@@ -19,4 +19,4 @@ You absolutely need `docker` and `docker-compose` to run anything here. This is 
 
 ## How to submit
 
-Please fork this repo, switch it into private repo, work on it, and then add our staff as collaborators to check the result.
+Please fork this repo, switch it into private repo, work on it, and then add @iclassadmin as repo collaborator to check your result.
