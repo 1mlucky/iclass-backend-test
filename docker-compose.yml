@@ -1,4 +1,13 @@
 services:
+  php:
+    image: "bigtruedata/php-mysqli"
+    network_mode: "host"
+    volumes:
+      - './php/src:/home'
+    depends_on:
+      - mysql
+    command: bash -c "cd /home; php -S localhost:28081;"
+
   mysql:
     build: "./mysql"
     ports:
@@ -7,6 +16,7 @@ services:
       MYSQL_ROOT_PASSWORD: "verysecurerootpasswordiclassTECHtessolution12345672019docker"
       MYSQL_USER: mysql
       MYSQL_PASSWORD: "someothersecurepassword0123456"
+
   pma:
     image: "phpmyadmin/phpmyadmin:latest"
     ports:
